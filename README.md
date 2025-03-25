@@ -12,6 +12,9 @@ Etapas:
 Como vamos resolver isso? (Dividindo o projeto em pequenas etapas)
 
 Passo 1 - Abra e leia o arquivo CSV.
+
 Passo 2 - Fazer cálculos (total de vendas, produto mais vendido).
+
 Passo 3 - Criar um relatório com os resultados.
+
 Passo 4 - Mostre isso de forma bonita na tela (site).
