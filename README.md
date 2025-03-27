@@ -14,7 +14,7 @@ Pequenas empresas precisam monitorar suas vendas, mas nem sempre têm sistemas r
 
 - Julia Celly de Morais Carvalho         | cellyjulia@gmail.com
 - Leonidas Leandro                       | prof.tenebroso@gmail.com
-- Isabella Alvarez de Andrade Nunes      | isabellaalvarezandrade@gmail.om
+- Isabella Alvarez de Andrade Nunes      | isabellaalvarezandrade@gmail.com
 - Rodolpho Dantas Gouveia                | rodolphogouveiageo@gmail.com
 - Dante Queiroga Marques Viegas          | danteviegas@gmail.com
 - Jader Ferreira Lima Junior             | jaderflj@gmail.com
