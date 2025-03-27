@@ -18,3 +18,11 @@ Passo 2 - Fazer cálculos (total de vendas, produto mais vendido).
 Passo 3 - Criar um relatório com os resultados.
 
 Passo 4 - Mostre isso de forma bonita na tela (site).
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Segmento: Farmácia manipulação (venda de medicamento)
+
