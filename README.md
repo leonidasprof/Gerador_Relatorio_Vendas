@@ -13,20 +13,7 @@ Pequenas empresas precisam monitorar suas vendas, mas nem sempre têm sistemas r
 
 ---
 
-<<<<<<< HEAD
-## Participantes (mentoria: Vitória)
-
-- Julia Celly de Morais Carvalho         | cellyjulia@gmail.com
-- Leonidas Leandro                       | prof.tenebroso@gmail.com
-- Isabella Alvarez de Andrade Nunes      | isabellaalvarezandrade@gmail.com
-- Rodolpho Dantas Gouveia                | rodolphogouveiageo@gmail.com
-- Dante Queiroga Marques Viegas          | danteviegas@gmail.com
-- Jader Ferreira Lima Junior             | jaderflj@gmail.com
-- Ayrton Wagner dos Santos Gomes de Sá   |
-- Raphael Viegas Barreto                 |
-=======
 ## Participantes (mentoria: Vitória Moura)
->>>>>>> 72250ede2deb784313611c64ede9ea26d16ac995
 
 - Julia Celly de Morais Carvalho         | cellyjulia@gmail.com
 - Leonidas Leandro                       | prof.tenebroso@gmail.com
