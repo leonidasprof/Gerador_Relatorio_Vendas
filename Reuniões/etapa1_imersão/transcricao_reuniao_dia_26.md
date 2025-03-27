@@ -1,6 +1,7 @@
 # 1ª Reunião do DAtaNeXt - 26/03/2025
 
 ## Participantes
+
 - Leonidas
 - Dante
 - Julia
@@ -11,7 +12,9 @@
 ---
 
 ## Resumo da Reunião
+
 A primeira mentoria aconteceu em duas partes:
+
 1. **Discussão inicial do problema e levantamento de requisitos**  
    - Identificação da necessidade de pequenas empresas para monitoramento de vendas.  
    - Definição do objetivo do projeto: criação de um programa para ler CSV, calcular estatísticas e gerar relatórios.  

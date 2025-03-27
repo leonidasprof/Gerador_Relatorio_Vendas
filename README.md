@@ -1,28 +1,34 @@
 # DAtaNeXt
+Segmento inicial: Farmácia de Manipulação
 
 ## Objetivo
+
 Criar um programa que leia um CSV, calcule estatísticas de vendas e gere um relatório visual para ajudar pequenas empresas a monitorar suas vendas de forma eficiente.
 
 ---
 
 ## Problema
+
 Pequenas empresas precisam monitorar suas vendas, mas nem sempre têm sistemas robustos para análise de dados. O desafio é criar uma solução acessível e funcional para essa necessidade.
 
 ---
 
 ## Participantes (mentoria: Vitória)
-- Leonidas | prof.tenebroso2gmail.com
-- Dante    | danteviegas@gmail.com
-- Julia    | cellyjulia@gmail.com
-- Jader    | jaderflj@gmail.com
-- Rodolpho | rodolphogouveiageo@gmail.com
-- Ayrton   |
-- Isabella | isabellaalvarezandrade@gmail.om
+
+- Julia Celly de Morais Carvalho         | cellyjulia@gmail.com
+- Leonidas Leandro                       | prof.tenebroso@gmail.com
+- Isabella Alvarez de Andrade Nunes      | isabellaalvarezandrade@gmail.com
+- Rodolpho Dantas Gouveia                | rodolphogouveiageo@gmail.com
+- Dante Queiroga Marques Viegas          | danteviegas@gmail.com
+- Jader Ferreira Lima Junior             | jaderflj@gmail.com
+- Ayrton Wagner dos Santos Gomes de Sá   |
+- Raphael Viegas Barreto                 |
 
 
 ---
 
 ## Requisitos do Projeto
+
 - Capacidade de processar e visualizar grandes conjuntos de dados.
 - Interface intuitiva para facilitar a navegação.
 - Automação de relatórios para análise de tendências.
@@ -31,6 +37,7 @@ Pequenas empresas precisam monitorar suas vendas, mas nem sempre têm sistemas r
 ---
 
 ## Como Será Resolvido
+
 A equipe desenvolverá uma plataforma que permitirá a importação, processamento e visualização de dados de forma ágil e eficiente, facilitando o uso por empresas e profissionais do setor.
 
 O projeto será dividido em pequenas etapas:
@@ -42,6 +49,7 @@ O projeto será dividido em pequenas etapas:
 ---
 
 ## Ciclo de Vida do Projeto
+
 O projeto **DataNeXt** será desenvolvido em quatro etapas principais:
 
 ### 1️⃣ Imersão
