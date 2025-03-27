@@ -10,7 +10,7 @@ Pequenas empresas precisam monitorar suas vendas, mas nem sempre têm sistemas r
 
 ---
 
-## Participantes (mentoria: Vitória)
+## Participantes (mentoria: Vitória Moura)
 
 - Julia Celly de Morais Carvalho         | cellyjulia@gmail.com
 - Leonidas Leandro                       | prof.tenebroso@gmail.com
