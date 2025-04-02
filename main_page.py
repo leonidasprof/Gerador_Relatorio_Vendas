@@ -5,7 +5,7 @@ st.set_page_config(page_title="DataNExT", layout="centered")
 st.markdown(
     """
     <style>
-    div[data-testid="stFileUploader"] {
+    div:has(> div > div > div > span:contains("JPG, JPEG, PNG")) {
         display: none;
     }
     </style>
@@ -29,13 +29,13 @@ st.markdown(
 
 st.title("DataNExT")
 
-empresa = st.text_input("Nome da Companhia", placeholder="Digite o nome da empresa", label_visibility="visible")
+empresa = st.text_input("Nome da Companhia", placeholder="Digite o nome da empresa")
 
-col1, col2 = st.columns([0.9, 0.1], vertical_alignment="bottom")
+col1, col2 = st.columns([0.9, 0.1], vertical_alignment="center")
 with col1:
-    logo = st.text_input("Logo URL", placeholder="https://example.com/logo.png", label_visibility="visible")
+    logo = st.text_input("Logo URL", placeholder="https://example.com/logo.png")
 with col2:
-    uploaded_logo = st.file_uploader("", type=["png", "jpg", 'jpeg'])
+    
     st.markdown(
         
         """
