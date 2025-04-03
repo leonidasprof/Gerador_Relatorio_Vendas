@@ -15,5 +15,5 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.sidebar.markdown("# Page 2 ❄️")
+st.sidebar.markdown("# Page 2 ")
 
