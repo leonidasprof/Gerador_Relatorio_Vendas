@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="DataNExT", layout="centered")
+st.set_page_config(page_title="DataNExT", layout="centered" )
 
 st.markdown(
     """
@@ -17,17 +17,24 @@ st.markdown(
     """
     <style>
         body {
-            background-color: #C23B22; /* Cor de fundo */
+            background-color: #9dc2ed; /* Cor de fundo */
         }
         .stApp {
-            background-color: #C23B22;
+            background-color: #9dc2ed;
         }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-st.title("DataNExT")
+#st.title("DataNExT")
+st.markdown(
+    """
+    <h1 style= 'text-align:left; color: #12357c'>DATANExT</h1>
+    
+    """,
+    unsafe_allow_html=True
+)
 
 empresa = st.text_input("Nome da Companhia", placeholder="Digite o nome da empresa")
 
@@ -44,18 +51,18 @@ with col2:
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            border-radius: 25%;
             background-color: white;
             cursor: pointer;
-            border: 2px solid #C23B22;
+            border: 2px solid white;
             box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
             transition: 0.3s;
             position: relative;
         }
         .upload-button:hover {
-            background-color: #f5f5f5;
+            background-color: #white;
         }
         .hidden-upload {
             opacity: 0;
@@ -80,3 +87,4 @@ botao_analise = st.button("Gerar Análise", type="primary", use_container_width=
 if upload_csv != None:
     if botao_analise == True:
         st.write("Carregando Dashboard")
+
