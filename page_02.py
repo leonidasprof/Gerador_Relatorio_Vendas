@@ -2,11 +2,11 @@ import streamlit as st
 
 st.set_page_config(page_title="DATANExT", layout="centered" )
 
-empresa = st.session_state.get('empresa')
+empresa = st.session_state.get('empresa', 'teste')
 
 #st.title("DataNExT")
 st.markdown(
-    """
+    f"""
     <h1 style= 'text-align:left; color: #12357c'>
     Dashboard {empresa}
     </h1>
@@ -15,5 +15,5 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.sidebar.markdown("# Page 2 ❄️")
+st.sidebar.markdown("Dashboard")
 

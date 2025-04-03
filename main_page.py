@@ -37,6 +37,7 @@ st.markdown(
 )
 
 empresa = st.text_input("Nome da Companhia", placeholder="Digite o nome da empresa")
+st.session_state['empresa'] = empresa
 
 col1, col2 = st.columns([0.9, 0.1], vertical_alignment="center")
 with col1:
