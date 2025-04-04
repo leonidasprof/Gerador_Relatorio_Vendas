@@ -15,5 +15,16 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.sidebar.markdown("Dashboard")
+logo = st.session_state.get('logo', 'teste')
+empresa = st.session_state.get('empresa', 'teste')
+st.sidebar.markdown(
+    f"""
+    <h1 style= 'text-align: center; color: #12357c'>
+    {empresa}
+    </h1>
+    <img src= {logo} alt= "Company Logo" style="width: 150px;">
+    """,
+    unsafe_allow_html=True
+)
 
+upload_csv = st.session_state.get('upload_csv', 'teste')

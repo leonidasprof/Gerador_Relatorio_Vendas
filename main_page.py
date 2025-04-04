@@ -36,12 +36,16 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+#input empresa
 empresa = st.text_input("Nome da Companhia", placeholder="Digite o nome da empresa")
 st.session_state['empresa'] = empresa
 
+#input logo
 col1, col2 = st.columns([0.9, 0.1], vertical_alignment="center")
 with col1:
-    logo = st.text_input("Logo URL", placeholder="https://example.com/logo.png")
+    logo = st.text_input("logo url", placeholder="https://example.com/logo.png")
+    st.write("")
+
 with col2:
     
     st.markdown(
@@ -52,12 +56,12 @@ with col2:
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 45px;
-            height: 45px;
-            border-radius: 25%;
-            background-color: white;
+            width: 50px;
+            height: 42.7px;
+            border-radius: 60%;
+            background-color: #3498db;
             cursor: pointer;
-            border: 2px solid white;
+            border: 0px solid #3498db;
             box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
             transition: 0.3s;
             position: relative;
@@ -80,12 +84,34 @@ with col2:
         """,
         unsafe_allow_html=True
     )
-    
+
+# if logo:
+#     st.session_state['logo'] = logo  
+#     st.success("Logo uploaded successfully!")
+
+#input csv
 upload_csv = st.file_uploader("Upload CSV", type="csv")
+
+st.markdown(""" 
+    <style>
+            div[data-testid="stButton"] > button {
+            background-color: #3498db; !important; 
+            color: white; !important; 
+            border: none; 
+            div[data-testid="stButton"] > button:hover {
+            background-color: #2980b9 !important;
+            }
+
+            div[data-testid="stButton"] > button:hover {
+            background-color: #2980b9 !important;
+            }
+    <style>
+        """, unsafe_allow_html=True)
 
 botao_analise = st.button("Gerar Análise", type="primary", use_container_width=True)
 
-if upload_csv != None:
-    if botao_analise == True:
-        st.write("Carregando Dashboard")
+if upload_csv:
+    st.session_state['upload_csv'] = upload_csv  
+    st.success("csv uploaded successfully!")
+
 
