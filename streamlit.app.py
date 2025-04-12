@@ -139,15 +139,20 @@ st.sidebar.markdown("### Ordem dos Eixos")
 ordem_eixos = st.sidebar.radio("Selecione uma opção:" ,["Gráfico vendedor", "Gráfico Gerente"])
 
 #Utiliza o arquivo csv upado 
-csv_caminho = r"C:\Users\SEDUC\Desktop\DAtaNeXt\fork\gerador_relatorio_de_vendas\bd_farmacia.csv"
+csv_caminho = "https://docs.google.com/spreadsheets/d/1yDPwzMI9X7K76lFDVohYNtxBhBA796BwPyRRbrXtXUA/pub?output=csv"
+
+# Inicializar o DataFrame
+data = None
 
 try:
-    # Substituído pelo DataFrame carregado na sessão
     if data is not None:
         st.success("Análise Gerada com Sucesso!")
     else:
+        # Carregar os dados do CSV
         data = pd.read_csv(csv_caminho)
-        st.success("Base de dados carregada localmente!")
+        st.success("Base de dados carregada com sucesso!")
+        st.dataframe(data)  # Exibe o DataFrame no Streamlit
+
 
 
     data['Data_Venda'] = pd.to_datetime(data['Data_Venda'], errors='coerce')
