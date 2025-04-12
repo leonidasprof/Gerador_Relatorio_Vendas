@@ -1,9 +1,8 @@
 import streamlit as st
 import pandas as pd
-import page_02
 
-# Configuração da página
-st.set_page_config(page_title="DataNExT", layout="wide", page_icon="icon_DataNext.png")
+# Configuração inicial da página (primeiro comando do script)
+st.set_page_config(page_title="DataNext Relatório de Vendas", layout="wide", page_icon="icon_DataNext.png")
 
 # Uso de colunas para centralizar logo e sub-título
 col1, col2, col3 = st.columns([1, 2, 1])  # Divide a tela em três colunas para centralização
@@ -79,26 +78,12 @@ st.markdown("""
     <style>
         """, unsafe_allow_html=True)
 
-# Botão para navegar para a segunda tela
-if 'pagina' not in st.session_state:
-    st.session_state['pagina'] = 'principal'
+# Botão para navegar para a segunda tela (com `key` único)
+botao_analise = st.button("Gerar Relatório de Vendas", type="primary", use_container_width=True, key="botao_analise_dashboard")
 
-# Navegação pela sessão
-if st.session_state['pagina'] == 'principal':
-    # Página principal
-    st.title("")
-    st.write("")
-
-    # Botão para navegar para a segunda tela
-    botao_analise = st.button("Gerar Relatório de Vendas", type="primary", use_container_width=True)
-    if botao_analise:
-        # Atualiza a página na sessão
-        st.session_state['pagina'] = 'page_02'
-        st.experimental_rerun()  # Recarrega a página para exibir a segunda
-
-elif st.session_state['pagina'] == 'page_02':
-    # Chama a função app() de page_02 para renderizar a segunda página
-    page_02.app()
+if botao_analise:
+    st.session_state['pagina'] = 'page_02'  # Atualiza para a segunda página
+ 
 
 # Rodapé
 st.markdown("""<hr><div style='text-align: center; font-size: small;'>©Todos os direitos reservados.</div>""", unsafe_allow_html=True)

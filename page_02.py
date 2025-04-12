@@ -7,16 +7,8 @@ import matplotlib.pyplot as plt
 from io import BytesIO
 from fpdf import FPDF
 
-def app():
-    st.title("Relatório de Vendas")
-    st.write("")
-    if st.button("Voltar"):
-        # Retorna à página principal
-        st.session_state['pagina'] = 'principal'
-        st.experimental_rerun()  # Recarrega a página
-
-
 def imagem_base64(caminho_imagem):
+    import base64
     with open(caminho_imagem, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
 
