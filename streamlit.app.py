@@ -139,7 +139,7 @@ st.sidebar.markdown("### Ordem dos Eixos")
 ordem_eixos = st.sidebar.radio("Selecione uma opção:" ,["Gráfico vendedor", "Gráfico Gerente"])
 
 #Utiliza o arquivo csv upado 
-csv_caminho = "https://docs.google.com/spreadsheets/d/1yDPwzMI9X7K76lFDVohYNtxBhBA796BwPyRRbrXtXUA/pub?output=csv"
+csv_caminho = "./bd_farmacia.csv"
 
 # Inicializar o DataFrame
 data = None
@@ -151,10 +151,7 @@ try:
         # Carregar os dados do CSV
         data = pd.read_csv(csv_caminho)
         st.success("Base de dados carregada com sucesso!")
-        st.dataframe(data)  # Exibe o DataFrame no Streamlit
-
-
-
+        
     data['Data_Venda'] = pd.to_datetime(data['Data_Venda'], errors='coerce')
     data['Quantidade_Vendida'] = pd.to_numeric(data['Quantidade_Vendida'], errors='coerce')
     data['Preço_Unitário'] = pd.to_numeric(data['Preço_Unitário'], errors='coerce')
