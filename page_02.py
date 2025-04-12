@@ -7,7 +7,10 @@ import matplotlib.pyplot as plt
 from io import BytesIO
 from fpdf import FPDF
 
-st.set_page_config(page_title="DATANExT", layout="wide")
+def app():
+    st.set_page_config(page_title="DataNExT - Página 2", layout="wide", page_icon="icon_DataNext.png")
+    st.title("Página 2")
+    st.write("Bem-vindo à Página 2.")
 
 def imagem_base64(caminho_imagem):
     with open(caminho_imagem, "rb") as img_file:
