@@ -85,8 +85,8 @@ if botao_analise:
     # URL da página externa
     url_page_02 = "https://relatoriovendas.streamlit.app"
     
-    # Redireciona diretamente para a página externa
-    st.components.v1.html(f"<script>window.open('{url_page_02}');</script>", height=0)
+    # Exibe o link diretamente para o navegador abrir em uma nova guia
+    st.markdown(f"[Clique aqui para acessar o Relatório de Vendas]({url_page_02})", unsafe_allow_html=True)
 
 
 # Rodapé
