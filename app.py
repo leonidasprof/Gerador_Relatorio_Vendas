@@ -79,11 +79,14 @@ st.markdown("""
         """, unsafe_allow_html=True)
 
 # Botão para navegar para a segunda tela (com `key` único)
-botao_analise = st.button("Gerar Relatório de Vendas", type="primary", use_container_width=True, key="botao_analise_dashboard")
+botao_analise = st.button("Gerar Relatório de Vendas", type="primary", use_container_width=True)
 
 if botao_analise:
-    st.session_state['pagina'] = 'page_02'  # Atualiza para a segunda página
- 
+    # URL dinâmica com parâmetros para a página externa
+    url_page_02 = f"https://datanextrelatorio.streamlit.app"
+
+    # Redireciona para a página externa
+    st.markdown(f'<meta http-equiv="refresh" content="0; url={url_page_02}">', unsafe_allow_html=True)
 
 # Rodapé
 st.markdown("""<hr><div style='text-align: center; font-size: small;'>©Todos os direitos reservados.</div>""", unsafe_allow_html=True)

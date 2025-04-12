@@ -139,7 +139,7 @@ st.sidebar.markdown("### Ordem dos Eixos")
 ordem_eixos = st.sidebar.radio("Selecione uma opção:" ,["Gráfico vendedor", "Gráfico Gerente"])
 
 #Utiliza o arquivo csv upado 
-csv_caminho = r"C:\Users\SEDUC\Desktop\DAtaNeXt\gerador_relatorio_de_vendas\gerador_relatorio_de_vendas\Base de dados - base-farmacia-esportiva-3000.csv"
+csv_caminho = r"C:\Users\SEDUC\Desktop\DAtaNeXt\fork\gerador_relatorio_de_vendas\bd_farmacia.csv"
 
 try:
     # Substituído pelo DataFrame carregado na sessão
@@ -148,6 +148,7 @@ try:
     else:
         data = pd.read_csv(csv_caminho)
         st.success("Base de dados carregada localmente!")
+
 
     data['Data_Venda'] = pd.to_datetime(data['Data_Venda'], errors='coerce')
     data['Quantidade_Vendida'] = pd.to_numeric(data['Quantidade_Vendida'], errors='coerce')
@@ -267,7 +268,7 @@ try:
     # ax.grid(True)
     # plt.xticks(rotation=0)
     # st.pyplot(fig)
-    
+
 except Exception as e:
     st.error(f"Erro ao carregar os dados: {e}")
 
