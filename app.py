@@ -84,9 +84,10 @@ botao_analise = st.button("Gerar Relatório de Vendas", type="primary", use_cont
 if botao_analise:
     # URL da página externa
     url_page_02 = "https://relatoriovendas.streamlit.app"
+    
+    # Redireciona diretamente para a página externa
+    st.components.v1.html(f"<script>window.open('{url_page_02}');</script>", height=0)
 
-    # Redireciona para a página externa
-    st.markdown(f'<meta http-equiv="refresh" content="0; url={url_page_02}">', unsafe_allow_html=True)
 
 # Rodapé
 st.markdown("""<hr><div style='text-align: center; font-size: small;'>©Todos os direitos reservados.</div>""", unsafe_allow_html=True)
