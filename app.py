@@ -79,15 +79,30 @@ st.markdown("""
         """, unsafe_allow_html=True)
 
 # Botão para navegar para a segunda tela (com `key` único)
-botao_analise = st.button("Gerar Relatório de Vendas", type="primary", use_container_width=True)
 
-if botao_analise:
-    # URL da página externa
-    url_page_02 = "https://relatoriovendas.streamlit.app"
-    
-    # Exibe o link diretamente para o navegador abrir em uma nova guia
-    st.markdown(f"[Clique aqui para acessar o Relatório de Vendas]({url_page_02})", unsafe_allow_html=True)
+# URL da página externa
+url_page_02 = "https://relatoriovendas.streamlit.app"
 
+# Botão estilizado que funciona como um link
+st.markdown(
+    f"""
+    <a href="{url_page_02}" target="_blank" style="text-decoration: none;">
+        <button style="
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        ">
+            Gerar Relatório de Vendas
+        </button>
+    </a>
+    """,
+    unsafe_allow_html=True
+)
 
 # Rodapé
 st.markdown("""<hr><div style='text-align: center; font-size: small;'>©Todos os direitos reservados.</div>""", unsafe_allow_html=True)
