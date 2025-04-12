@@ -82,8 +82,8 @@ st.markdown("""
 botao_analise = st.button("Gerar Relatório de Vendas", type="primary", use_container_width=True)
 
 if botao_analise:
-    # URL dinâmica com parâmetros para a página externa
-    url_page_02 = f"https://datanextrelatorio.streamlit.app"
+    # URL da página externa
+    url_page_02 = "https://relatoriovendas.streamlit.app"
 
     # Redireciona para a página externa
     st.markdown(f'<meta http-equiv="refresh" content="0; url={url_page_02}">', unsafe_allow_html=True)
